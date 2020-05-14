@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template principal para el sitio web</title>
+  
+<link href="./css/estilos.css?1558381cdf32dfaa6b3e" rel="stylesheet"></head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        Implementa un formulario de login con HTML5 y Bootstrap. Con los siguientes campos y sus correspondientes valida dores
+      </div>
+      <div class="card-body">
+        <form action="https://dinahosting.com/login-usuarios" method="POST"> 
+          <div class="form-group">
+            <label for="InputEmail">Usuario</label>
+            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Ingrese un correo" required>
+          </div>
+          <div class="form-group">
+            <label for="InputPassword">Contraseña</label>
+            <input type="password" class="form-control" id="InputPassword" 
+                placeholder="Ingrese contraseña"  minlength="8" pattern="^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9])[a-zA-Z][a-zA-Z0-9]{8,}$"
+                title="mínimo 8 caracteres, al menos 1 letra mayúscula, 1 letra minúscula y no puede contener caracteres especiales" 
+                required>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="Check">
+            <label class="form-check-label" for="Check1">Recordar contraseña</label>
+          </div>
+          <button type="submit" class="btn btn-primary button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+<script type="text/javascript" src="main.js?1558381cdf32dfaa6b3e"></script></body>
+</html>
